@@ -1,0 +1,48 @@
+name: tecfix_frontend_mobile
+description: "A new Flutter project."
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  # Corregido: Se ajustó a un rango compatible con tus dependencias
+  sdk: '>=2.18.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # --- Tus dependencias ---
+  
+  # Para hacer llamadas a la API (Backend)
+  http: ^0.13.5
+  
+  # Para guardar el token de sesión y los datos del usuario
+  shared_preferences: ^2.0.15
+  
+  # Para tomar/seleccionar fotos (RF-01)
+  image_picker: ^0.8.6
+  
+  # Para formatear fechas (ej. en Historial)
+  intl: ^0.17.0
+  
+  # Se eliminó la entrada duplicada
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0 # Ajustado a una versión compatible con el SDK 2.18
+
+# Configuración específica de Flutter
+flutter:
+  uses-material-design: true
+
+  # assets:
+  #   - images/a_dot_burr.jpeg
+
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
